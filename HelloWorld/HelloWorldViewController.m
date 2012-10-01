@@ -36,7 +36,10 @@
         nameString = @"World";
     }
 
-    NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
+    //NOTE: removing this because the label is too small and i can't make it bigger
+    //NOTE: when i try to size the label in the designer it crashes xcode and therefore
+    //NOTE: the greeting has to be small. (xcode 4.5 bug)
+    //NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
     self.label.text = nameString;
 }
 
